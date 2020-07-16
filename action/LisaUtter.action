@@ -1,0 +1,8 @@
+# Define the goal
+string sentence  # Specify which dishwasher we want to use
+---
+# Define the result
+string result_message
+---
+# Define a feedback message
+float32 percent_complete # between 0.0 and 1.0, an estimation
