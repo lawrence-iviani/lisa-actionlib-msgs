@@ -13,7 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
   actionlib_msgs
 )
 
-find_package(catkin REQUIRED genmsg actionlib_msgs)
+find_package(catkin REQUIRED genmsg actionlib actionlib_msgs)
 
 add_action_files(DIRECTORY action FILES LisaUtter.action)
 add_action_files(DIRECTORY action FILES DoDishes.action) # TODO: remove when finished with experiment
