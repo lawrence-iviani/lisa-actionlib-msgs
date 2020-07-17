@@ -17,9 +17,7 @@ find_package(catkin REQUIRED genmsg actionlib actionlib_msgs)
 
 add_action_files(DIRECTORY action FILES LisaUtter.action)
 add_action_files(DIRECTORY action FILES DoDishes.action) # TODO: remove when finished with experiment
-generate_messages(DEPENDENCIES actionlib_msgs)
 
-# catkin_package is configured below
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -54,6 +52,11 @@ generate_messages(DEPENDENCIES actionlib_msgs)
 ##   * uncomment the generate_messages entry below
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
+add_service_files(
+  FILES
+  Intent.srv
+)
+
 ## Generate messages in the 'msg' folder
 # add_message_files(
 #   FILES
@@ -80,6 +83,8 @@ generate_messages(DEPENDENCIES actionlib_msgs)
 #   DEPENDENCIES
 #   actionlib_msgs
 # )
+
+generate_messages(DEPENDENCIES actionlib_msgs)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
