@@ -9,14 +9,14 @@ project(lisa_actionlib_msgs)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   genmsg
+  std_msgs
   actionlib
   actionlib_msgs
 )
 
-find_package(catkin REQUIRED genmsg actionlib actionlib_msgs)
+find_package(catkin REQUIRED genmsg std_msgs actionlib actionlib_msgs)
 
 add_action_files(DIRECTORY action FILES LisaUtter.action)
-add_action_files(DIRECTORY action FILES DoDishes.action) # TODO: remove when finished with experiment
 
 
 ## System dependencies are found with CMake's conventions
@@ -54,9 +54,13 @@ add_action_files(DIRECTORY action FILES DoDishes.action) # TODO: remove when fin
 
 add_service_files(
   FILES
-  Intent.srv
+  IntentService.srv
 )
 
+add_message_files(
+  FILES
+  IntentMessage.msg
+)
 ## Generate messages in the 'msg' folder
 # add_message_files(
 #   FILES
