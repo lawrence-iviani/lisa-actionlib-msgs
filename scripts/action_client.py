@@ -4,7 +4,7 @@ import roslib
 # roslib.load_manifest('my_pkg_name')
 import rospy
 import actionlib
-from lisa_actionlib_msgs.msg  import LisaUtterAction, LisaUtterGoal
+from lisa_interaction_msgs.msg  import LisaUtterAction, LisaUtterGoal
 
 
 if __name__ == '__main__':

@@ -6,7 +6,7 @@ import actionlib
 
 from time import sleep
 
-from lisa_actionlib_msgs.msg  import LisaUtterAction, LisaUtterFeedback, LisaUtterResult
+from lisa_interaction_msgs.msg  import LisaUtterAction, LisaUtterFeedback, LisaUtterResult
 
 class LisaUtteranceTestServer:
 	"""
