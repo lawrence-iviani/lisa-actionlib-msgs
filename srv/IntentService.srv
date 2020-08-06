@@ -1,4 +1,5 @@
 string intent_name
 string[] pay_load
+float32 confidence
 ---
 bool success
