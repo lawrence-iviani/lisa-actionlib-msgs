@@ -1,5 +1,8 @@
+# this is the same of IntentMessage.msg (todo: how to emebed here the same message instead of duplicate fields?)
+string context_id
+string original_input
 string intent_name
-string[] pay_load
 float32 confidence
+string[] pay_load
 ---
 bool success
