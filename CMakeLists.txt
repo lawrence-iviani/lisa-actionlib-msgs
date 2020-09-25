@@ -53,6 +53,8 @@ add_service_files(
 add_message_files(
   FILES
   IntentMessage.msg
+  IntentNotRecognizedMessage.msg
+  TtsSessionEnded.msg
 )
 ## Generate messages in the 'msg' folder
 # add_message_files(

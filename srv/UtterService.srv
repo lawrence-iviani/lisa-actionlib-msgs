@@ -1,5 +1,6 @@
 string context_id
 string text
-bool canbeenqued
+bool canbeenqued # if set true, it will added to the execution queue,otherwise discarded
+bool canbediscarded # if set true, and another session is on going, this will drop the previous session
 ---
 bool success

@@ -1,4 +1,5 @@
 # this is the same of IntentMessage.msg (todo: how to emebed here the same message instead of duplicate fields?)
+# this is not really used anymore
 string context_id
 string original_input
 string intent_name
