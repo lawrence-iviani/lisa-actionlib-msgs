@@ -5,3 +5,4 @@ bool canbediscarded # if set true, and another session is on going, this will dr
 string[] intents
 ---
 bool success
+string context_id # return the context assigned to this id (the same of input if present or an automatic generated)
