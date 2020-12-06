@@ -55,6 +55,8 @@ add_message_files(
   IntentMessage.msg
   IntentNotRecognizedMessage.msg
   TtsSessionEnded.msg
+  WakedUpMessage.msg
+  TextCapturedMessage.msg
 )
 ## Generate messages in the 'msg' folder
 # add_message_files(
